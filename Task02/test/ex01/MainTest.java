@@ -23,15 +23,16 @@ public class MainTest {
     }
 
     /**
-     * Tests calc method of the Calc class.
+     * Tests calcHex and calcOct methods of the Calc class.
      */
     @Test
-    public void testCalc() {
+    public void testCalcHexAndOctal() {
         Calc calc = new Calc();
-        Item2d result = calc.calc(28.8);
+        int resultHex = calc.calcHex(28.8);
+        int resultOctal = calc.calcOct(28.8);
         
-        assertEquals(16, result.getHex());
-        assertEquals(2, result.getOctal());
+        assertEquals(16, resultHex);
+        assertEquals(2, resultOctal);
     }
 
     /**
