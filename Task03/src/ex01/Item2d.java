@@ -75,6 +75,45 @@ public class Item2d implements Serializable {
     }
 
     /**
+     * Automatically generated method.
+     * @param obj
+     * @return 
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Item2d other = (Item2d) obj;
+        if (Double.doubleToLongBits(this.randomNumber) != Double.doubleToLongBits(other.randomNumber)) {
+            return false;
+        }
+        if (this.hex != other.hex) {
+            return false;
+        }
+        return this.octal == other.octal;
+    }
+    
+     /**
+     * Automatically generated method.
+     * @return 
+     */
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 17 * hash + (int) (Double.doubleToLongBits(this.randomNumber) ^ (Double.doubleToLongBits(this.randomNumber) >>> 32));
+        hash = 17 * hash + this.hex;
+        hash = 17 * hash + this.octal;
+        return hash;
+    }
+
+    /**
      * Returns a string representation of the object.
      * @return a string representation of the object.
      */
