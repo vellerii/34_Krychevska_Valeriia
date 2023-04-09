@@ -87,3 +87,21 @@
 **Результат тестування програми:**
 
 ![alt-текст](https://github.com/vellerii/34_Krychevska_Valeriia/blob/main/Task05/images/task05-test.png "task05-test")
+
+# Task06
+
+**Завдання:**
+
+1. Продемонструвати можливість паралельної обробки елементів колекції (пошук мінімуму, максимуму, обчислення середнього значення, відбір за критерієм, статистична обробка тощо).
+2. Управління чергою завдань (команд) реалізувати за допомогою шаблону Worker Thread.
+
+**Результат виконання завдання:**
+
+![alt-текст](https://github.com/vellerii/34_Krychevska_Valeriia/blob/main/Task06/images/task06.png "task06")
+
+![alt-текст](https://github.com/vellerii/34_Krychevska_Valeriia/blob/main/Task06/images/task06_2.png "task06_2")
+
+**Результат тестування програми:**
+
+![alt-текст](https://github.com/vellerii/34_Krychevska_Valeriia/blob/main/Task06/images/task06-test.png "task06-test")
+
