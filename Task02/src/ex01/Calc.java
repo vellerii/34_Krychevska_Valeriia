@@ -46,19 +46,21 @@ public class Calc {
         return result;
     }
 
-    /**
-     * Calculates the number of hexadecimal and octal digits in the given value of the decimal number.
-     * @param randomNumber The randomNumber value to calculate.
-     * @return Item2d object containing the random number, hexadecimal count, and octal count.
-     */
-    public Item2d calc(double randomNumber) {
+    public int calcHex(double randomNumber) {
         String hexString = Double.toHexString(randomNumber);
-        String octalString = Integer.toOctalString(Double.valueOf(randomNumber).intValue());
-        
         int hexCount = hexString.replaceAll("\\.", "").length() - 2;
-        int octCount = octalString.length();
+        return hexCount;
+    }
 
-        return new Item2d(randomNumber, hexCount, octCount);
+    /**
+     * Calculates the number of octal digits in the given value of the decimal number.
+     * @param randomNumber The randomNumber value to calculate.
+     * @return The number of octal digits in the given value of the decimal number.
+     */
+    public int calcOct(double randomNumber) {
+        String octalString = Integer.toOctalString(Double.valueOf(randomNumber).intValue());
+        int octCount = octalString.length();
+        return octCount;
     }
 
     /**
@@ -66,7 +68,9 @@ public class Calc {
      * @param randomNumber The random number for calculate.
      */
     public void init(double randomNumber) {
-        setResult(calc(randomNumber));
+        result.setRandomNumber(randomNumber);
+        result.setHex(calcHex(randomNumber));
+        result.setOctal(calcOct(randomNumber));
     }
 
     /**
