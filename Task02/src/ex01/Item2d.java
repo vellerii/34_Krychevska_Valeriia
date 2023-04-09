@@ -24,7 +24,7 @@ public class Item2d implements Serializable {
         this.octal = octal;
     }
 
-    Item2d() {}
+    public Item2d() {}
 
     /**
      * Returns the random number stored in the object.
