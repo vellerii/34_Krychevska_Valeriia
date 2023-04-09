@@ -27,7 +27,7 @@ public class ViewResult implements View {
     /**
      * Collection of argument and result items.
      */
-    private ArrayList<Item2d> items = new ArrayList<>();
+    public ArrayList<Item2d> items = new ArrayList<>();
     
     /**
      * Constructs a ViewResult object with the default number of items to display.
