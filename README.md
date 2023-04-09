@@ -64,8 +64,8 @@
 
 **Результат виконання завдання:**
 
-![alt-текст]( "task04")
+![alt-текст](https://github.com/vellerii/34_Krychevska_Valeriia/blob/main/Task04/images/task04.png "task04")
 
 **Результат тестування програми:**
 
-![alt-текст]( "task04-test")
+![alt-текст](https://github.com/vellerii/34_Krychevska_Valeriia/blob/main/Task04/images/task04-test.png "task04-test")
